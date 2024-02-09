@@ -11,6 +11,16 @@ body {
   line-height: 1.5;
 }
 
+.title {
+  margin-left: 15%;
+  margin-top: 7rem;
+  font-size: 2.5rem;
+}
+
+.line {
+  padding-top: 2rem;
+}
+
 .header-area {
   background-color: black;
   position: fixed;
@@ -19,44 +29,128 @@ body {
   top: 0;
   left: 0;
 }
+
 .header-area .logo_nav {
   font-family: "Whisper", cursive;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .header-area .navbar {
-  padding: 1rem;
+  padding: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+
 .header-area .navbar a {
   text-align: center;
   text-decoration: none;
   color: white;
 }
+
 .header-area .navbar a:hover {
   color: pink;
 }
 
 .banner-area {
-  width: 100%;
-  height: 20rem;
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/img1.jpg);
+  min-height: 45rem;
 }
+
+.banner-area .banner_title {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color:black;
+}
+
+.banner-area .banner_title .banner_text {
+  font-size: 8rem;
+  font-family: "Whisper", cursive;
+  font-weight: bold;
+}
+
 
 .about-area {
-  width: 100%;
-  height: 20rem;
+  padding: 3rem 15%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3rem;
 }
 
-.menu-area {
-  width: 100%;
-  height: 20rem;
+.about-area .about-text {
+  text-align: center;
 }
 
-.contact-area {
+.about-area .about-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.menu-area .menu {
+  padding: 5rem 15%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.menu-area .menu .menu_img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contact_area .contact_1 {
+  padding: 3rem 10%;
+  max-width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.contact_area .contact_1 .contact_title {
+  font-size: 1.7rem;
+}
+
+.contact_area .contact_1 hr {
+  height: 50%;
+  color: black;
+}
+
+.contact_area .contact_2 {
+  padding: 3rem 15%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 3rem;
+}
+
+.contact_area .contact_2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contact_area .contact_2 .input {
+  font-family: "Space Mono", monospace;
+  margin: 0.5rem;
+  padding: 1rem;
   width: 100%;
-  height: 20rem;
+  border: 1px solid black;
 }
 
 .footer-area {
@@ -68,15 +162,18 @@ body {
   justify-content: space-around;
   color: white;
 }
+
 .footer-area hr {
   height: 35%;
   color: white;
 }
+
 .footer-area .footer-left .logo-footer {
   font-family: "Whisper", cursive;
   font-size: 5.8rem;
   font-weight: bold;
 }
+
 .footer-area .footer-midle a {
   display: flex;
   flex-direction: column;
@@ -85,15 +182,18 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .footer-area .footer-right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .footer-area .footer-right .text {
   font-size: 0.8rem;
   padding-bottom: 0.7rem;
 }
+
 .footer-area .footer-right .icons a {
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
